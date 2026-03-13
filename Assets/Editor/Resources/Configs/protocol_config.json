@@ -1,0 +1,27 @@
+{
+  "protocol": {
+    "version": "1.0.0",
+    "name": "VR Classroom Analysis Protocol",
+    "description": "VR教室场景分析工具数据交换协议"
+  },
+  "scene": {
+    "requiredFields": ["name", "version", "objects"],
+    "optionalFields": ["description", "author", "createdDate"]
+  },
+  "objects": {
+    "requiredFields": ["id", "type", "position"],
+    "optionalFields": ["rotation", "scale", "material", "interactive"],
+    "typeMapping": {
+      "Desk": ["desk", "table", "桌"],
+      "Chair": ["chair", "seat", "椅"],
+      "Blackboard": ["blackboard", "board", "黑板"],
+      "Light": ["light", "lamp", "灯"],
+      "Other": []
+    }
+  },
+  "output": {
+    "directory": "Assets/GeneratedOutput/",
+    "filename": "classroom_protocol_{timestamp}.json",
+    "format": "pretty" 
+  }
+}

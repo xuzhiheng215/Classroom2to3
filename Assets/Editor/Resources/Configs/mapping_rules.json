@@ -1,0 +1,15 @@
+{
+  "namePatterns": {
+    "Desk": ["Desk", "desk", "Table", "table", "桌", "台"],
+    "Chair": ["Chair", "chair", "Seat", "seat", "椅", "凳"],
+    "Blackboard": ["Blackboard", "blackboard", "Board", "board", "黑板", "白板"],
+    "Light": ["Light", "light", "Lamp", "lamp", "灯", "照明"],
+    "Interactive": ["Button", "button", "Switch", "switch", "Trigger", "trigger"]
+  },
+  "componentMapping": {
+    "hasMeshRenderer": "renderable",
+    "hasCollider": "interactive",
+    "hasRigidbody": "physics",
+    "hasLightComponent": "lightSource"
+  }
+}
